@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article To Read</title>
+</head>
+<body>
+	<h3>Here is Your Individual Article to read from Show.erb</h3><br>
+	<h2><%= @article.title %></h2> <br>
+	<%= @article.content%>
+	<%= %>
+	<%= %>		
+	<%= %>
+	<form method = "POST"  action="/articles/<%= @article.id %>" /delete>
+		<input id="hidden" type = "hidden" name="_method" value="DELETE" >
+		<input type="submit" value=" Delete! ">
+	</form>
+
+</body>
+</html>

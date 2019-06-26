@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Article To Read</title>
+</head>
+<body>
+	<h3>See All Articles: </h3><br>
+	<ul>
+		<% @articles.each do |a| %>
+		
+	
+		<li><h2><%= a.title %></h2></li> 
+		<li><%= a.content %></li>
+		<br>
+	<% end%>		
+	<%= %>
+	</ul>
+</body>
+</html>
